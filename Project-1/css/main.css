@@ -1,0 +1,506 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f4f8fd;
+  overflow-x: hidden;
+}
+
+.explore {
+  background-color: #f4f8fd;
+  padding: 80px 0;
+  position: relative;
+}
+.explore::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background-color: #eff1fd;
+  right: 0;
+  top: 0;
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  .explore::before {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+}
+.explore__heading {
+  padding: 0 20px 0 20px;
+}
+.explore__heading h1 {
+  font-size: 4.5rem;
+}
+.explore__heading p {
+  font-size: 1.3rem;
+}
+.explore__category {
+  background-color: #fff;
+  display: flex;
+  width: 200px;
+  height: 160px;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.explore__category-icon {
+  width: 35px;
+  height: 35px;
+  animation: iconsScale 2s infinite ease-in-out;
+}
+
+@keyframes iconsScale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.sponsors {
+  background-color: #f4f8fd;
+}
+.sponsors__logo {
+  width: 50px;
+}
+
+.topRated {
+  background-color: #213658;
+}
+.topRated__bigCircle {
+  background-color: #2f4363;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  .topRated__bigCircle {
+    width: 270px;
+    height: 270px;
+  }
+}
+.topRated__bigCircle-text {
+  font-size: 10rem;
+  letter-spacing: -10px;
+  color: black;
+  -webkit-text-fill-color: transparent;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #3be9b6;
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  .topRated__bigCircle-text {
+    margin-top: 10px;
+    padding-left: 40px !important;
+    font-size: 7rem;
+  }
+}
+.topRated__bigCircle-smallCircle {
+  background-color: #384b69;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  .topRated__bigCircle-smallCircle {
+    width: 200px;
+    height: 200px;
+  }
+}
+.topRated__smallCircles {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+.topRated__smallCircles--0 {
+  left: 65%;
+  transform: translateX(-65%);
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  .topRated__smallCircles--0 {
+    top: -20%;
+  }
+}
+.topRated__smallCircles--1 {
+  top: 50%;
+  left: -4.5%;
+  transform: translate(-4.5%, -50%);
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  .topRated__smallCircles--1 {
+    left: -10%;
+    top: 15%;
+    transform: translateX(-10%);
+  }
+}
+.topRated__smallCircles--2 {
+  top: 50%;
+  right: -43%;
+  transform: translate(-43%, -50%);
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  .topRated__smallCircles--2 {
+    display: none;
+  }
+}
+.topRated__smallCircles--3 {
+  bottom: -4%;
+  display: flex;
+  justify-content: flex-end;
+  left: 70%;
+  transform: translateX(-70%);
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  .topRated__smallCircles--3 {
+    bottom: -28%;
+  }
+}
+.topRated__smallCircles-image {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.topRated__smallCircles-image img {
+  border-radius: 50%;
+}
+.topRated__smallCircles-details {
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 150px;
+  padding: 15px 15px;
+  position: relative;
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  .topRated__smallCircles-details {
+    width: 130px;
+  }
+}
+.topRated__smallCircles-details h5 {
+  font-weight: 700;
+  margin-left: 5px !important;
+}
+.topRated__smallCircles-ratings {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+}
+.topRated__smallCircles-ratings i {
+  color: #3be9b6;
+}
+.topRated .rightSideCol {
+  padding-left: 100px;
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  .topRated .rightSideCol {
+    padding: 100px 0 0px 40px !important;
+  }
+}
+
+.forPadding {
+  padding: 60px 0;
+}
+
+.features {
+  background-color: #f4f8fd;
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  .features__yourBusiness {
+    padding: 0 30px 0 0;
+  }
+  .features__yourBusiness h1 {
+    font-size: 3rem;
+  }
+}
+.features__reviews p {
+  font-size: 1.2rem;
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  .features__reviews p {
+    font-size: 1.6rem;
+  }
+}
+.features__person {
+  display: flex;
+  justify-content: center;
+}
+.features__person-shape {
+  border-radius: 80px;
+  width: 230px;
+  height: 360px;
+  transform: rotate(45deg);
+  background-color: #916cf9;
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  .features__person-shape {
+    width: 200px;
+    height: 330px;
+  }
+}
+.features__person-otherShape {
+  border-radius: 30px;
+  width: 250px;
+  height: 450px;
+  transform: rotate(0deg);
+  position: absolute;
+  top: 0;
+}
+.features__person-personImage {
+  width: 100%;
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: -5%;
+  background-image: url("https://i.ibb.co/G3jfrzV/african-man-holding-ipad-compressed-removebg-preview.png");
+  background-size: 88%;
+  background-repeat: no-repeat;
+  background-position: 100px center;
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  .features__person-personImage {
+    background-position: 50px center;
+  }
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto 0 auto;
+  padding: 30px 0;
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  .contact {
+    margin: 0px 0 0px 0;
+    padding: 20px 0 30px 0;
+  }
+}
+.contact__oneSide h4 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.contact__oneSide p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.contact__otherSide {
+  margin-left: 70px;
+}
+.contact__otherSide a {
+  background-color: #8667de;
+  border-radius: 15px;
+  font-size: 1.8rem;
+  color: #fff;
+  padding: 10px 35px 10px 35px;
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  .contact__oneSide h4 {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  .contact__oneSide p {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+  .contact__otherSide {
+    margin-left: 10px;
+  }
+  .contact__otherSide a {
+    background-color: #8667de;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0;
+    padding: 8px 22.5px 8px 22.5px !important;
+  }
+}
+
+.footer {
+  padding: 50px 0 80px 0 !important;
+}
+.footer__ul li a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: #213658;
+}
+.footer__ul li .active {
+  background-color: #213658 !important;
+  color: #fff;
+}
+.footer__items li {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #7b889f;
+}
+
+.nav-link {
+  font-weight: 800;
+  color: #000;
+  font-size: 1.3rem;
+}
+
+.navbar-toggler-icon:active {
+  transform: rotate(90deg);
+}
+
+.heroSect {
+  background-color: #213658;
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  .heroSect__fact h1 {
+    font-size: 4rem;
+  }
+}
+.heroSect::before {
+  content: "";
+  position: absolute;
+  top: -12%;
+  right: -12%;
+  width: 55%;
+  height: 100%;
+  background-color: #926df9;
+  border-radius: 250px;
+  transform: rotate(-30deg);
+}
+.heroSect::after {
+  content: "";
+  position: absolute;
+  right: -10%;
+  width: 65%;
+  bottom: -25%;
+  height: 80%;
+  background-color: #3be9b6;
+  border-radius: 150px;
+  transform: rotate(-25deg);
+}
+
+.nav-link {
+  color: #fff;
+  font-weight: 600;
+}
+
+.heroSect__rightSide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.heroSect__rightSide-image {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://i.ibb.co/HChK3WQ/cheerful-man-pointing-finger-left-advertise-product-1-removebg-preview.png");
+  background-size: cover;
+  background-position: -450px center;
+  background-repeat: no-repeat;
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  .heroSect__rightSide-image {
+    background-position: -380px center;
+  }
+}
+.heroSect__rightSide-icon {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url(/icons/Instagram_3d_Icon_generated-removebg-preview.png);
+  background-size: cover;
+}
+.heroSect__rightSide-icon--2 {
+  background-image: url("https://i.ibb.co/ZxQ6v0s/Messenger-3d-Icon-generated-removebg-preview.png");
+  right: 100%;
+  top: 62%;
+}
+
+.reviews {
+  padding: 70px 0 100px 0;
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  .reviews {
+    padding: 35px 0 20px 0;
+  }
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  .reviews__heading {
+    font-size: 2.5rem;
+    width: 100% !important;
+  }
+}
+.reviews__container {
+  background-color: #fff;
+  width: 270px;
+  height: 220px;
+  border-radius: 15px;
+  position: relative;
+}
+.reviews__container-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: indigo;
+}
+.reviews__container-image img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.reviews__container-mainReview {
+  font-size: 1.5rem;
+}
+.reviews__container-stars {
+  position: absolute;
+  bottom: 15%;
+  font-size: 1.6rem;
+}
+.reviews .greenTypeColor {
+  color: #7bf0cd;
+}
+
+/*# sourceMappingURL=main.css.map */
