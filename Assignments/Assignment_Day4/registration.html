@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma,  Verdana, sans-serif;
+    }
+
+    body {
+      width: 100%;
+      height: 100vh;
+      background-color: #fff;
+    }
+    .container{
+      width: 100%;
+      height: 100vh;
+      margin: 50px auto;
+      display: flex;
+    }
+    #left {
+      margin: 50px 80px;
+      display: inline-block;
+      background-color: #fff;
+      width: 30%;
+      height: 60vh;
+    }
+
+    label {
+      margin: auto;
+      text-transform: uppercase;
+      font-size: 30px;
+      display: block;
+      margin-top: 30px;
+    }
+
+    input {
+      width: 70%;
+      height: 40px;
+      outline: none;
+      border: 2px solid black;
+    }
+
+    #error {
+      margin-top: 5px;
+      color: red;
+      font-size: 25px;
+    }
+
+    #register_btn {
+      background-color: #000;
+      color: #fff;
+      font-size: 20px;
+      width: 70%;
+      padding: 10px;
+      height: 50px;
+      margin-top: 20px;
+    }
+    #right{
+      display: inline-block;
+      border: 2px solid black;
+      width: 30%;
+      height: 60vh;
+      margin: 100px 80px;
+      background-color: #000;
+    }
+    #right_name{
+      margin-top: 40px;
+      color: #fff;
+      font-size: 30px;
+      margin-left: 20px;
+    }
+   
+    #right_heading {
+      color: #fff;
+      font-size: 40px;
+      font-weight: 600;
+      margin-left: 20px;
+
+    }
+    .right_inputs {
+      margin-top: 20px;
+      margin-left: 20px;
+      color: #fff;
+      font-size: 30px;
+    }
+    #right_email{
+      margin: 10px 0 0 20px;
+      color: white;
+      font-size: 25px;
+    }
+    #right_mobile{
+      /* margin: top right bottom left */
+      margin: 10px 0px 40px 20px;
+      color: white;
+      font-size: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div id="left">
+      <label for="name">NAME</label>
+      <input type="text" id="name">
+      <label for="email">EMAIL</label>
+      <input type="email" id="email">
+      <label for="mobile">MOBILE</label>
+      <input type="tel" id="mobile">
+      <p id="error">Enter a valid mobile</p>
+      <button id="register_btn">REGISTER</button>
+    </div>
+    <div id="right">
+      <p id="right_name">NAME</p>
+      <h2 id="right_heading">sai kiran</h2>
+      <p class="right_inputs">EMAIL</p>
+      <p id="right_email">saikiran@technovar.com</p>
+      <p class="right_inputs">MOBILE</p>
+      <p id="right_mobile">1234567890</p>
+    </div>
+  </div>
+</body>
+
+</html>
