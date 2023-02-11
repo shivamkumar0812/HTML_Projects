@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yummly</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    }
+
+    .container {
+      height: 100vh;
+      width: 70%;
+      margin: auto;
+      background-color: #ddd;
+    }
+
+    .weeknight_dinners {
+      width: 90%;
+      border: 2px solid transparent;
+      height: 44%;
+      margin: auto;
+      margin-bottom: 2%;
+      display: flex;
+    }
+
+    .popular_now {
+      width: 90%;
+      height: 44%;
+      border: 2px solid transparent;
+      margin: auto;
+      display: flex;
+    }
+
+    .headline {
+      font-size: 1.5vw;
+      color: #444;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .img_boxes {
+      border: 2px solid transparent;
+      height: 90%;
+      width: 30%;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    .img_boxes_image {
+      width: 100%;
+      height: 70%;
+      object-fit: cover;
+    }
+
+    .food_details {
+      width: 100%;
+      height: 28%;
+      display: flex;
+    }
+
+    .details{
+      width: 78%;
+      height: 96%;
+      overflow: hidden;
+    }
+
+    .food_description {
+      width: 98%;
+      max-height: 50%;
+      overflow: hidden;
+      color: #444;
+      font-size: 1.1vw;
+      line-height: 1.2vw;
+    }
+
+    .brand {
+      font-size: 1.1vw;
+      margin-top: 1%;
+      margin-right: 2%;
+      color: #888;
+    }
+
+    .food_img {
+      margin-top: 2%;
+      float: right;
+      width: 17%;
+      height: 60%;
+    }
+
+    .logo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Assignment 2 -->
+  <div class="container">
+    <h2 class="headline">Weeknight Dinners</h2>
+    <div class="weeknight_dinners">
+      <div class="img_boxes">
+        <img class="img_boxes_image" src="food1.jpg" alt="Burger">
+        <div class="food_details">
+          <div class="details">
+            <h3 class="food_description">Sheetal Pan Honey Mustard Pork Chops With Hazzlenuts</h3>
+            <p class="brand">Yummly</p>
+          </div>
+          <div class="food_img">
+            <img class="logo" src="yum.png" alt="logo png">
+          </div>
+        </div>
+
+      </div>
+      <div class="img_boxes">
+        <img class="img_boxes_image" src="food2.jpg" alt="Chicken Nuggets">
+        <div class="food_details">
+          <div class="details">
+            <h3 class="food_description">Apricot Mustard Glazed Ham</h3>
+            <p class="brand">Yummly</p>
+          </div>
+          <div class="food_img">
+            <img class="logo" src="yum.png" alt="logo png">
+          </div>
+        </div>
+      </div>
+      <div class="img_boxes">
+        <img class="img_boxes_image" src="food3.jpg" alt="Hakka Noodles">
+        <div class="food_details">
+          <div class="details">
+            <h3 class="food_description">Pork Milanese With Cacio e Pepe Spagged</h3>
+            <p class="brand">Pork</p>
+          </div>
+          <div class="food_img">
+            <img class="logo" src="yum.png" alt="logo png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="headline">Popular Now</h2>
+    <div class="popular_now">
+      <div class="img_boxes">
+        <img class="img_boxes_image" src="food4.jpg" alt="Brown Sugar Cookies">
+        <div class="food_details">
+          <div class="details">
+            <h3 class="food_description">Brown Sugar Cookies</h3>
+            <p class="brand">Yummly</p>
+          </div>
+          <div class="food_img">
+            <img class="logo" src="yum.png" alt="logo png">
+          </div>
+        </div>
+      </div>
+      <div class="img_boxes">
+        <img class="img_boxes_image" src="food5.jpg" alt="Gajar ka halwa">
+        <div class="food_details">
+          <div class="details">
+            <h3 class="food_description">Vegan Spinach Lasagna</h3>
+            <p class="brand">Yummly</p>
+          </div>
+          <div class="food_img">
+            <img class="logo" src="yum.png" alt="logo png">
+          </div>
+        </div>
+      </div>
+      <div class="img_boxes">
+        <img class="img_boxes_image" src="food6.jpg" alt="Momos image">
+        <div class="food_details">
+          <div class="details">
+            <h3 class="food_description">Easy Korean Sticky Momos with Red Chutney</h3>
+            <p class="brand">Yummly</p>
+          </div>
+          <div class="food_img">
+            <img class="logo" src="yum.png" alt="logo png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

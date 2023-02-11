@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hindu</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  }
+  .container{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+
+  }
+  .left{
+    width: 46%;
+    border: 2px solid transparent;
+    margin: 2%;
+    border: 1px solid #999;
+  }
+  .left_upper{
+    width: 96%;
+    height: 68%;
+    margin: 2%;
+    border: 2px solid transparent;
+    background-color: #08345B;
+    color: #fff;
+  }
+  #left_upper_img{
+    width: 100%;
+    height: 48%;
+    object-fit: cover;
+  }
+  .left_lower{
+    width: 96%;
+    margin: 2%;
+    height: 26%;
+    border: 2px solid transparent;
+  }
+  #left_lower_img{
+    float: left;
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .right{
+    width: 46%;
+    margin: 2%;
+    border: 2px solid transparent;
+    background-color: #eee;
+
+  }
+  .right_boxes{
+    width: 96%;
+    height: 23%;
+    border: 1px solid #888;
+    margin: 2%;
+  }
+  .right_boxes_img{
+    float: left;
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #left_upper_description{
+    font-size: 1.2vw;
+    color: #B3C0CC;
+    margin-top: 1%;
+    margin-left: 2%;
+  }
+  #left_upper_headline{
+    color: #fff;
+    font-size: 2.2vw;
+    margin: 2%;
+  }
+  .left_upper_topic{
+    margin: 2%;
+    color: #fff;
+    font-size: 1vw;
+  }
+  .news_description{
+    color: #222;
+    font-size: 1.3vw;
+    margin-left: 22%;
+  }
+  .headline{
+    margin-left: 22%;
+    color: #08345B;
+    font-size: 1.5vw;
+  }
+
+</style>
+<body>
+  <!-- Assignment 1 -->
+  <div class="container">
+    <div class="left">
+      <div class="left_upper">
+        <img id="left_upper_img" src="01.jpg" alt="apple iphone image">
+        <h1 id="left_upper_headline">Apple is going to launch it's next iPhone iPhone 15 recently</h1>
+        <h3 class="left_upper_topic">DNA WebDisk</h3>
+        <h3 class="left_upper_topic">Suhasini Haider</h3>
+        <p id="left_upper_description">Apple iPhone 12 Mini was the first ever Mini model in Apples portfolio.</p>
+      </div>
+      <div class="left_lower">
+        <img id="left_lower_img" src="02.jpg" alt="car wash">
+        <h3 class="headline">Sports</h3>
+        <p class="news_description">India is going to fight with Aussies in Border Gavaskar Trophy</p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="right_boxes">
+        <img class="right_boxes_img" src="03.jpg" alt="the huddle">
+        <h3 class="headline">The Huddle</h3>
+        <p class="news_description">The Huddle 2020 | Regional Integreation pagged to SAARC revival, says Ranil Wickramsenghie.</p>
+      </div>
+      <div class="right_boxes">
+        <img class="right_boxes_img" src="04.jpg" alt="pakistan Submarine">
+        <h3 class="headline">International</h3>
+        <p class="news_description">America to give Pakistan 5 Submarines.</p>
+      </div>
+      <div class="right_boxes">
+        <img class="right_boxes_img" src="05.jpg" alt="shubhman gill">
+        <h3 class="headline">Sports</h3>
+        <p class="news_description">Shubman Gill scored his first 200 runs in test career.</p>
+      </div>
+      <div class="right_boxes">
+        <img class="right_boxes_img" src="06.png" alt="smartwatch">
+        <h3 class="headline">Technology</h3>
+        <p class="news_description">See why this new smartwatch is gaining popularity in India</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
